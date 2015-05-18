@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{59411DD0-24F9-48F7-80EA-3F8000855168}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>quick_libs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_LIB;CC_USE_CURL=1;CC_LUA_ENGINE_ENABLED=1;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src\extra;$(ProjectDir)..\src\extensions;$(EngineRoot)cocos;$(EngineRoot)cocos\scripting\lua-bindings\manual;$(EngineRoot)external;$(EngineRoot)external\lua\lua;$(EngineRoot)external\lua\tolua;$(EngineRoot)external\glfw3\include\win32;$(EngineRoot)external\win32-specific\zlib\include;$(EngineRoot)external\win32-specific\gles\include\OGLES/;$(EngineRoot)external\curl\include\win32;$(EngineRoot)extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LIB;CC_USE_CURL=1;CC_LUA_ENGINE_ENABLED=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\src\extra;$(ProjectDir)..\src\extensions;$(EngineRoot)cocos;$(EngineRoot)cocos\scripting\lua-bindings\manual;$(EngineRoot)external;$(EngineRoot)external\lua\lua;$(EngineRoot)external\lua\tolua;$(EngineRoot)external\glfw3\include\win32;$(EngineRoot)external\win32-specific\zlib\include;$(EngineRoot)external\win32-specific\gles\include\OGLES/;$(EngineRoot)external\curl\include\win32;$(EngineRoot)extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\package_quick_register.cpp" />
+    <ClCompile Include="..\src\extensions\cjson\fpconv.c" />
+    <ClCompile Include="..\src\extensions\cjson\lua_cjson.c" />
+    <ClCompile Include="..\src\extensions\cjson\strbuf.c" />
+    <ClCompile Include="..\src\extensions\filesystem\lfs.c" />
+    <ClCompile Include="..\src\extensions\lpack\lpack.c" />
+    <ClCompile Include="..\src\extensions\lsqlite3\lsqlite3.c" />
+    <ClCompile Include="..\src\extensions\lsqlite3\sqlite3.c" />
+    <ClCompile Include="..\src\extensions\quick_extensions.c" />
+    <ClCompile Include="..\src\extensions\zlib\lua_zlib.c" />
+    <ClCompile Include="..\src\extra\apptools\HelperFunc.cpp" />
+    <ClCompile Include="..\src\extra\crypto\base64\libbase64.c" />
+    <ClCompile Include="..\src\extra\crypto\CCCrypto.cpp" />
+    <ClCompile Include="..\src\extra\crypto\md5\md5.c" />
+    <ClCompile Include="..\src\extra\filters\filters\CCBlurFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCBrightnessFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCContrastFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCCustomFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCDropShadowFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCExposureFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCGammaFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCGrayFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCHazeFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCHueFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCMaskFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCRGBFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCSaturationFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCSepiaFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCSharpenFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\filters\CCTestFilter.cpp" />
+    <ClCompile Include="..\src\extra\filters\nodes\CCFilteredSprite.cpp" />
+    <ClCompile Include="..\src\extra\filters\shaders\ccFilterShaders.cpp" />
+    <ClCompile Include="..\src\extra\filters\shaders\FilterShaders.cpp" />
+    <ClCompile Include="..\src\extra\luabinding\cocos2dx_extra_luabinding.cpp" />
+    <ClCompile Include="..\src\extra\luabinding\HelperFunc_luabinding.cpp" />
+    <ClCompile Include="..\src\extra\luabinding\lua_cocos2dx_extension_filter_auto.cpp" />
+    <ClCompile Include="..\src\extra\luabinding\lua_cocos2dx_extension_nanovg_auto.cpp" />
+    <ClCompile Include="..\src\extra\luabinding\lua_cocos2dx_extension_nanovg_manual.cpp" />
+    <ClCompile Include="..\src\extra\nanovg\nanonode\NVGDrawNode.cpp" />
+    <ClCompile Include="..\src\extra\nanovg\nanonode\NVGNode.cpp" />
+    <ClCompile Include="..\src\extra\nanovg\nanovg\nanovg.c" />
+    <ClCompile Include="..\src\extra\network\CCHTTPRequest.cpp" />
+    <ClCompile Include="..\src\extra\network\CCNetwork.cpp" />
+    <ClCompile Include="..\src\extra\platform\win32\CCCryptoWin32.cpp" />
+    <ClCompile Include="..\src\extra\platform\win32\CCNative.cpp" />
+    <ClCompile Include="..\src\extra\platform\win32\CCNativeWin32.cpp" />
+    <ClCompile Include="..\src\extra\platform\win32\CCNetworkWin32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\extensions\cjson\fpconv.h" />
+    <ClInclude Include="..\src\extensions\cjson\lua_cjson.h" />
+    <ClInclude Include="..\src\extensions\cjson\strbuf.h" />
+    <ClInclude Include="..\src\extensions\filesystem\lfs.h" />
+    <ClInclude Include="..\src\extensions\lpack\lpack.h" />
+    <ClInclude Include="..\src\extensions\lsqlite3\lsqlite3.h" />
+    <ClInclude Include="..\src\extensions\lsqlite3\sqlite3.h" />
+    <ClInclude Include="..\src\extensions\quick_extensions.h" />
+    <ClInclude Include="..\src\extensions\zlib\lua_zlib.h" />
+    <ClInclude Include="..\src\extra\apptools\HelperFunc.h" />
+    <ClInclude Include="..\src\extra\cocos2dx_extra.h" />
+    <ClInclude Include="..\src\extra\crypto\base64\libbase64.h" />
+    <ClInclude Include="..\src\extra\crypto\CCCrypto.h" />
+    <ClInclude Include="..\src\extra\crypto\md5\md5.h" />
+    <ClInclude Include="..\src\extra\filters\cocos2dFilters.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCBlurFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCBrightnessFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCContrastFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCCustomFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCDropShadowFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCExposureFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCGammaFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCGrayFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCHazeFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCHueFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCMaskFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCRGBFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCSaturationFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCSepiaFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCSharpenFilter.h" />
+    <ClInclude Include="..\src\extra\filters\filters\CCTestFilter.h" />
+    <ClInclude Include="..\src\extra\filters\nodes\CCFilteredSprite.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShaders.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_blur_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_brightness_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_colorramp_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_contrast_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_drop_shadow_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_drop_shadow_vert.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_embossmov_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_emboss_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_exposure_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_gamma_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_gaussian_blur_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_gaussian_hblur_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_gaussian_vblur_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_grass_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_gray_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_haze_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_hblur_vert.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_hue_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_motion_blur_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_motion_blur_vert.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_rgb_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_saturation_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_sepia_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_sharpen_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_sharpen_vert.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_test_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_test_vert.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_vblur_vert.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\ccFilterShader_zoom_blur_frag.h" />
+    <ClInclude Include="..\src\extra\filters\shaders\FilterShaders.h" />
+    <ClInclude Include="..\src\extra\luabinding\cocos2dx_extra_ios_iap_luabinding.h" />
+    <ClInclude Include="..\src\extra\luabinding\cocos2dx_extra_luabinding.h" />
+    <ClInclude Include="..\src\extra\luabinding\HelperFunc_luabinding.h" />
+    <ClInclude Include="..\src\extra\luabinding\lua_cocos2dx_extension_filter_auto.hpp" />
+    <ClInclude Include="..\src\extra\luabinding\lua_cocos2dx_extension_nanovg_auto.hpp" />
+    <ClInclude Include="..\src\extra\luabinding\lua_cocos2dx_extension_nanovg_manual.hpp" />
+    <ClInclude Include="..\src\extra\nanovg\nanonode\NVGDrawNode.h" />
+    <ClInclude Include="..\src\extra\nanovg\nanonode\NVGNode.h" />
+    <ClInclude Include="..\src\extra\nanovg\nanovg\fontstash.h" />
+    <ClInclude Include="..\src\extra\nanovg\nanovg\nanovg.h" />
+    <ClInclude Include="..\src\extra\nanovg\nanovg\nanovg_gl.h" />
+    <ClInclude Include="..\src\extra\nanovg\nanovg\nanovg_gl_utils.h" />
+    <ClInclude Include="..\src\extra\nanovg\nanovg\stb_image.h" />
+    <ClInclude Include="..\src\extra\nanovg\nanovg\stb_truetype.h" />
+    <ClInclude Include="..\src\extra\network\CCHTTPRequest.h" />
+    <ClInclude Include="..\src\extra\network\CCHTTPRequestDelegate.h" />
+    <ClInclude Include="..\src\extra\network\CCNetwork.h" />
+    <ClInclude Include="..\src\extra\platform\win32\CCNativeWin32.h" />
+    <ClInclude Include="..\src\extra\platform\win32\CCNativeWin32def.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

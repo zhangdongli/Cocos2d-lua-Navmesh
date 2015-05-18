@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-up" width="15" height="10" tilewidth="64" tileheight="64" nextobjectid="28">
+ <tileset firstgid="1" name="caodi" tilewidth="64" tileheight="64">
+  <image source="caodi.png" width="256" height="256"/>
+ </tileset>
+ <layer name="layer1" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBzFo5jKGACzTACX
+  </data>
+ </layer>
+ <objectgroup name="zhangai">
+  <object id="10" x="62.6667" y="60">
+   <polyline points="0,0 830.667,4 832,514.667 2.66667,514.667 1.33333,1.33333"/>
+  </object>
+  <object id="11" x="197.333" y="132">
+   <polyline points="0,0 186.667,-2.66667 185.333,60 0,58.6667 0,1.33333"/>
+  </object>
+  <object id="12" x="608" y="133.333">
+   <polyline points="0,0 186.667,-2.66667 180,57.3333 -5.33333,57.3333 -1.33333,2.66667"/>
+  </object>
+  <object id="13" x="201.333" y="378.667">
+   <polyline points="0,0 192,-2.66667 186.667,49.3333 5.33333,48 2.66667,4"/>
+  </object>
+  <object id="14" x="596" y="380">
+   <polyline points="0,0 185.333,0 188,53.3333 2.66667,53.3333 0,6.66667"/>
+  </object>
+  <object id="15" x="100" y="236">
+   <polyline points="0,0 60,-9.33333 74.6667,64 53.3333,129.333 -1.33333,113.333 -2.66667,64 0,5.33333"/>
+  </object>
+  <object id="16" x="804" y="233.333">
+   <polyline points="0,0 49.3333,26.6667 68,69.3333 66.6667,118.667 29.3333,144 4,97.3333 -4,50.6667 1.33333,1.33333"/>
+  </object>
+  <object id="17" x="237.333" y="266.667">
+   <polyline points="0,0 38.6667,-2.66667 28,42.6667 6.66667,38.6667 -4,2.66667"/>
+  </object>
+  <object id="18" x="689.333" y="265.333">
+   <polyline points="0,0 53.3333,6.66667 49.3333,44 17.3333,52 2.66667,25.3333 1.33333,4"/>
+  </object>
+  <object id="19" x="270.667" y="80">
+   <polyline points="0,0 18.6667,28 -12,41.3333 -21.3333,20 0,1.33333"/>
+  </object>
+  <object id="20" x="702.667" y="89.3333">
+   <polyline points="0,0 16,30.6667 -36,26.6667 -25.3333,4 0,-1.33333"/>
+  </object>
+  <object id="21" x="290.667" y="484">
+   <polyline points="0,0 22.6667,34.6667 -22.6667,48 -32,-2.66667 0,1.33333"/>
+  </object>
+  <object id="22" x="684" y="482.667">
+   <polyline points="0,0 45.3333,10.6667 21.3333,50.6667 -37.3333,57.3333 -21.3333,20 0,1.33333"/>
+  </object>
+  <object id="23" x="466.667" y="156">
+   <polyline points="0,0 65.3333,-1.33333 65.3333,274.667 9.33333,270.667 0,1.33333"/>
+  </object>
+  <object id="24" x="472" y="81.3333">
+   <polyline points="0,0 89.3333,14.6667 40,33.3333 -25.3333,41.3333 2.66667,0"/>
+  </object>
+  <object id="25" x="489.333" y="502.667">
+   <polyline points="0,0 65.3333,9.33333 45.3333,50.6667 -44,32 5.33333,-1.33333"/>
+  </object>
+  <object id="26" x="377.333" y="246.667">
+   <polyline points="0,0 60,53.3333 13.3333,77.3333 -38.6667,66.6667 0,0"/>
+  </object>
+  <object id="27" x="602.667" y="254.667">
+   <polyline points="0,0 64,42.6667 36,72 -21.3333,93.3333 -12,22.6667 0,0"/>
+  </object>
+ </objectgroup>
+</map>
