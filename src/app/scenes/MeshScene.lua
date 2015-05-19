@@ -54,11 +54,11 @@ end
 ------------------------------------------------------------
 
 function MeshScene:initMap()
-	local tmxTiledMap = cc.TMXTiledMap:create("maps/caodi.tmx");
+	local tmxTiledMap = cc.TMXTiledMap:create("maps/moba_caodi.tmx");
 	if tmxTiledMap == nil then return end
 	self.m_mapLayer:addChild(tmxTiledMap);
 
-	local group = tmxTiledMap:getObjectGroup("zhangai");
+	local group = tmxTiledMap:getObjectGroup("zhang_ai_rect");
 	if group ~= nil then
 		local objs = group:getObjects();
 		if objs ~= nil  and #objs > 0 then

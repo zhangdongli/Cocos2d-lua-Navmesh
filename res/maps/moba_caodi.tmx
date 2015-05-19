@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="54" height="33" tilewidth="64" tileheight="64" nextobjectid="66">
+ <tileset firstgid="1" name="moba_caodi1" tilewidth="64" tileheight="64">
+  <image source="moba_caodi1.png" width="1029" height="1412"/>
+ </tileset>
+ <tileset firstgid="353" name="moba_caodi2" tilewidth="64" tileheight="64">
+  <image source="moba_caodi2.png" width="576" height="704"/>
+ </tileset>
+ <tileset firstgid="452" name="moba_caodi3" tilewidth="64" tileheight="64">
+  <image source="moba_caodi3.png" width="576" height="577"/>
+ </tileset>
+ <layer name="layer1" width="54" height="33">
+  <data encoding="base64" compression="zlib">
+   eJztyLsNgDAQwNDbf4tAoA8Eej5hLjwBPZGf5MYpIgYaKdNEM6Wf/0ILrVRpo72Df9BJF93U6OngS5IkSZIkSZIk6dsL94pxmA==
+  </data>
+ </layer>
+ <layer name="layer2" width="54" height="33">
+  <data encoding="base64" compression="zlib">
+   eJzt1lNuRlEAhdH7D7W2bdu2bdvtxLoG0aT3JGcn620P4EuSuLj/X1YmSbLJIZc88imgkKJMmJ9iSiiljHIqqKSK6kA/NdRSRz0NNNJEMy2Bflppo50OOumimx56A/300c8AgwwxzAijjAX6GWeCSaaYZoZZ5pgP9LPAIksss8Iqa6yzEehnky222WGXPfY54DDQzxHHnHDKGedccMlVoJ9rbrjljnseeOSJ50A/L7zyxjsffPLFNz+BftLWP7GjYkeloX9iR8WOSkP/xI6KHZWG/okdFTsqDf0TOyp2VBr6J3ZU7Kg09M9ffX4B0OeLog==
+  </data>
+ </layer>
+ <layer name="layer3" width="54" height="33">
+  <data encoding="base64" compression="zlib">
+   eJzd1kds01AYwPHnsumS2NB1YbeFI3t0UWhZXUwJkACxJODGOMA7sEHAgT2PbDiyoTc2iA1HpugAVDooaQv8rTrCNXbstA5J+KSf7MTvfe97jpN8QggRiShEC/PIxnhMQA5yLcZ5wyxfGtKRgUxkYZwfefypIVs7xiEeCRbjpmMGZmIWZhvW7K0I0Uf5M94sXx7yUYBCFGEaNvioT5/HrAZhqCMGsdpYNZKRop2fwEmcMqyxGEuwFMt0a6p1bcQmbMYWbMU2bMcOQ575WICF2msn81OxyKQG494TkaSNXWVY9yIu4bLGG6uxBmsN92IP9mIf9uMADuIQDuOI8B2+5hvDWIO+jlSbddR4imd4jhcOxgczKlGFatRYjHmjHd/hPT7gY+BLa3ZE8J1uhdZoozS91kkxnxMOodbeGV3Q1aV9WH3mZuHkWQm38PWs2EUo34NAPCv+xmM8Cc7SAQ319/CtaPw9/B/jE89LCUpRhnJ8xhd8dXhep4hiD9zKzVjJHMlcSQ5pVrfd97GCPN9QiSpUowbfUevwXMtTXMKxFGUob0FuxkrmSObKCot92YWn8X6LejTgJ36ptUYIoUQ4O+e+Ftfy8oeaD3WoR4NoXm7GSuZI5kqPtq9//d/blvXaoT06oCMiEYVoxCA2DPuBbtTcHT3QE70Qh3gkIBFJYbivvtTcD/0xAAORjBSkYhAGh9C+fP3eGHulIdQ9FMMwHCMwEqNs9hNKPYZdr5TDe7mYGODPSH9v3YhQ6JVa0oeGYnif21C4t8EK7z3ws+eRXJd2/U4gcvobfvY8kuvSrt9xK6eT/Vn1I372U5Lr0qzfCXROp+Fx4Xunrm/2X+RGbm9+dzK5E6H0vxuOMQdzMS/IdbgR+r0sxwqsDGZBPsKfHlm/l3VYD2kYcxTHcBy3cBt3LPLpx2ZQQ6aujtGcj8FYpWme0ziDs4Zc13EDN03mpyFdaVxDjSzt6F1bv5ed2IXdhvzncB4X8BKv8NpiX/qxBaxViCJMwmRMwVSlaZ4ruIpruIt7uI8HeIhH4u/5echXmq6hX1u/l9/hPWzB
+  </data>
+ </layer>
+ <layer name="layer4" width="54" height="33">
+  <data encoding="base64" compression="zlib">
+   eJzt1rsKwkAQheHJqrEx6iPnBfMe3hqjFl7xNAEbwVkHVuH/4FRJljnbZMwAAADwL0bJbKxMUulJ/LPsKmu3ykZZKytleDbTGY0yd/bqKt/7n/DOclKPo3JQemX/0usb5+Bu3rt6qMdduSlX5RLUCwCAUnL2qGmytk7x/8DInS5nj1qq0yKw17Bn5O50784r9T0AAL/sCXvWHf0=
+  </data>
+ </layer>
+ <layer name="layer5" width="54" height="33">
+  <data encoding="base64" compression="zlib">
+   eJzdmLdyFEEQhvdOEpLIkMHF+ABFuAR4AcwrQEAOVEHaeJsI7wmBJwACIMLJIgkdIMtJJxELW2R8W3tXtUzNrJkd7oT+qq+knent6ZntmevdRs/zmqAZFnv2ykEe6qAeGmARNMb4PwiH4HCGsXVaBsthRcYxlkALtEIbtMNSxf9KzX3H4DicsBgzSmthHaxXxjgJp+A0nIGzcA7OwwW4CHfhHtxXfK6C1bBG8b8BHsBDeFS27YRLcBkOlDkCRxPGYNIW2ArblDGuwFW4BtfhBtyEW3Ab7sSs1ybYrPj39RiewNOY+z0HMaTRAAw69BenYSjEjK/a2KgIUzCd0Y9JaowzMBsxfkljk0Rz8DWB3VBKvybZxLjQlXRtTXvJRT7byuVeCqtU/luLXLHdS3Fr8ZKi4hW8hjfwFrqgG3qCa6Fd6BfsBHuphq8oJVmLPsbrh3cwAIMwBO9hOLgW2oV+wU6wl985d75s5qVTEwVfcz74v8BYH+AjfIIRGIUxGIeJ4FpoF/oFO8FeCuV4vsF3+OHAl616NWs8SdtnKMIUTEMJZmAWvgTXQrvQL9gJ9sJ9kqevDuqhIZfNly5e3f7ZB/uzLEKE/GfzE/xcbIU2aDfkpa1sz5J/oXBO+vP+Vdtw/lLa3xG/7vHzMZyT801xzz6q9mpxlJPhmiFpredalbyrKEveVWolv2ao1Xx8qWfhQpEu74rlvqh3nWq+5/2PdVQS2dY+urOzlnVUWFlqH/XsrFYdleRccVn7uK6jfFX7u0uUdO+3tvH5Z5H63SVpjejqG0aUdPHVQrozoZq/lzZjxeXEfKml087NZU5s5CzoyNl9c8ny7J/Bc3jh2edR2Ieq7cxpB+xUaqmOBLVVJZ45TZ9pz3dDD/RCH/R7wTkSpXD8XQYfYe0i9t2wB/aG5mGaq43UNR2FMRiHCZg03GeKfySFj7BMc02jqDX9A4w0r4M=
+  </data>
+ </layer>
+ <layer name="layer6" width="54" height="33">
+  <data encoding="base64" compression="zlib">
+   eJztljdSxDAUQLVbESrYEwAnAO4GFyBDSY4lsSdDSYaGHBvgHDzPrgaNRl57bUtmF72ZV9jS//qSx38khKfeWMJlXNHedxSE6MSuQvl5AAdxCIdxBEdxDMdxAldxDdeVPHHiqq1rIipnNbrJ24O9lfyTOIXTOIOzOIfzuICLuG3YW5y4gD7sN6xrIiqnDYK97eCupfyexuMO7/MuwgJf+G0h761IfmZpYm3zKZKfWZrYRkV+axeUio4WEr/f2gVyX1n8N03kak55Ti3Et2IbthfL9cl36nicuQH6f1OqzJMxsmY1Tt2Hy+8uyeIcba7jur+66Ol59Fff0+sHva94/g9/+U6Zhlr6jz8DN8h7SZaUtDtSgOmOU+tdR+aQcXIN2Stt3GPUGpPkt1GTq/uapzZ8z/LY4hCP8DiHtTdwE7fwBE/xLGRu1HjAOV7gJV7hNd7EqEPPrT+rdcZhD/fxAB/wEZ9C5oaNqzU84wu+4hu+40fEHky59We1ThM/w/aIxQ==
+  </data>
+ </layer>
+ <layer name="layer7" width="54" height="33">
+  <data encoding="base64" compression="zlib">
+   eJzt1v0NgjAQBfBjF9lAB9IZcCZ1AnUMNToACeoYPoMkx8UPSO5CLO+XvD8o0KNNgYqQp0kmkmexNVbIGtnElmmZYkyz17gOyFGds8dd2Hv0mPaqvUCWyA25f+iruUZbIHPTpmu8u/5ZozTt9rgLfc8W2Ul7TN761LBzQkREafv2/ySicbkip6Efwhm/cX6857KSes2lhOuNqMZ3gbxErqVU1+kZufxh379E7hv69j3kPERKcW82dg+XuzRJ
+  </data>
+ </layer>
+ <objectgroup name="jian_zhu_pos">
+  <object id="1" name="1" x="256" y="1090" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="type" value="9"/>
+   </properties>
+  </object>
+  <object id="2" name="2" x="3136" y="1088" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="type" value="9"/>
+   </properties>
+  </object>
+  <object id="3" name="3" x="2944" y="768" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="type" value="7"/>
+   </properties>
+  </object>
+  <object id="4" name="4" x="2944" y="1472" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="type" value="7"/>
+   </properties>
+  </object>
+  <object id="5" name="5" x="448" y="768" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="type" value="7"/>
+   </properties>
+  </object>
+  <object id="6" name="6" x="448" y="1472" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="type" value="7"/>
+   </properties>
+  </object>
+  <object id="7" name="7" x="1088" y="448" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="type" value="6"/>
+   </properties>
+  </object>
+  <object id="8" name="8" x="2304" y="448" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="type" value="6"/>
+   </properties>
+  </object>
+  <object id="9" name="9" x="1088" y="1728" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="type" value="6"/>
+   </properties>
+  </object>
+  <object id="10" name="10" x="2304" y="1728" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="type" value="6"/>
+   </properties>
+  </object>
+  <object id="11" name="11" x="832" y="1088" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="type" value="7"/>
+   </properties>
+  </object>
+  <object id="12" name="12" x="2560" y="1088" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="type" value="7"/>
+   </properties>
+  </object>
+  <object id="13" name="13" x="1280" y="1088" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="type" value="6"/>
+   </properties>
+  </object>
+  <object id="14" name="14" x="2112" y="1088" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="type" value="6"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="xiao_bing_pos">
+  <object id="15" name="1" x="512" y="320">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="fangxiang" value="1"/>
+   </properties>
+   <polyline points="0,0 64,64 128,128 64,192 0,256"/>
+  </object>
+  <object id="16" name="2" x="512" y="1600">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="fangxiang" value="3"/>
+   </properties>
+   <polyline points="0,0 64,64 128,128 64,192 0,256"/>
+  </object>
+  <object id="17" name="3" x="832" y="960">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="fangxiang" value="2"/>
+   </properties>
+   <polyline points="0,0 -64,64 -128,128 -64,192 0,256"/>
+  </object>
+  <object id="18" name="4" x="2944" y="320">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="fangxiang" value="1"/>
+   </properties>
+   <polyline points="0,0 -64,64 -128,128 -64,192 0,256"/>
+  </object>
+  <object id="19" name="5" x="2944" y="1600">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="fangxiang" value="3"/>
+   </properties>
+   <polyline points="0,0 -64,64 -128,128 -64,192 0,256"/>
+  </object>
+  <object id="20" name="6" x="2624" y="960">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="fangxiang" value="2"/>
+   </properties>
+   <polyline points="0,0 64,64 128,128 64,192 0,256"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="wu_jiang_pos">
+  <object id="21" name="1" x="576" y="1024" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="index" value="2"/>
+   </properties>
+  </object>
+  <object id="22" name="2" x="576" y="1088" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="index" value="1"/>
+   </properties>
+  </object>
+  <object id="23" name="3" x="576" y="1152" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="index" value="3"/>
+   </properties>
+  </object>
+  <object id="24" name="4" x="576" y="960" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="index" value="4"/>
+   </properties>
+  </object>
+  <object id="25" name="5" x="576" y="1216" width="64" height="64">
+   <properties>
+    <property name="camp" value="1"/>
+    <property name="index" value="5"/>
+   </properties>
+  </object>
+  <object id="26" name="6" x="2816" y="1088" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="index" value="1"/>
+   </properties>
+  </object>
+  <object id="27" name="7" x="2816" y="1024" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="index" value="2"/>
+   </properties>
+  </object>
+  <object id="28" name="8" x="2816" y="1152" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="index" value="3"/>
+   </properties>
+  </object>
+  <object id="29" name="9" x="2816" y="960" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="index" value="4"/>
+   </properties>
+  </object>
+  <object id="30" name="10" x="2816" y="1216" width="64" height="64">
+   <properties>
+    <property name="camp" value="2"/>
+    <property name="index" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="zhang_ai_rect">
+  <object id="58" name="1" x="64" y="1152">
+   <polyline points="0,0 64,-896 3264,-896 3328,0 3264,832 64,832 0,0"/>
+  </object>
+  <object id="60" name="2" x="1088" y="960">
+   <polyline points="0,0 -448,-64 -448,-320 0,-384 512,-320 512,-64 0,0"/>
+  </object>
+  <object id="61" name="3" x="1856" y="896">
+   <polyline points="0,0 0,-256 448,-320 960,-256 960,0 448,64 0,0"/>
+  </object>
+  <object id="62" name="4" x="640" y="1600">
+   <polyline points="0,0 0,-256 448,-320 960,-256 960,0 448,64 0,0"/>
+  </object>
+  <object id="65" name="5" x="1856" y="1600">
+   <polyline points="0,0 0,-256 512,-320 1024,-256 1024,0 512,64 0,0"/>
+  </object>
+ </objectgroup>
+</map>
