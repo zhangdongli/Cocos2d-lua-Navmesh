@@ -97,7 +97,7 @@ function MobaPolygon:CW()
     if (not self:IsCW()) then
         -- 倒置 m_lstPoints
         local len = #self.m_lstPoints;--长度
-        local stp = checkint(len / 2);--步长
+        local stp =  math.floor(len / 2);--步长
         local tmp = nil;
         for i=1,stp do
             --交换

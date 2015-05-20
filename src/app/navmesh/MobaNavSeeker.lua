@@ -76,7 +76,6 @@ function MobaNavSeeker:FixPos(orgTarTri, orgTarPos, otherTri, otherPos, extendLe
     --//////////////////////////////////////////////////////////////////////////--
     --为了精确判断,需要逆向延长线段一定长度
     if (extendLength > 0) then
-    
         local newTarPos = MobaNMath.ExtendPos(otherPos, tarPos, extendLength);
         tarPos = newTarPos;
     end
@@ -288,11 +287,11 @@ function MobaNavSeeker:SeekTrianglePath(startPos, endPos, offset)
 							--放入开放列表并排序
 							openList[#openList + 1] = neighborTri;
                             if #openList >= 2 then
-                                --按照HValue倒序
+                                --按照HValue正序
     							table.sort(openList, function (x,y)
                                     local xFvalue = x:GetHValue() --/*+ x.GValue*/;
                                     local yFvalue = y:GetHValue() --/*+ y.GValue*/;
-                                    return xFvalue > yFvalue; 
+                                    return xFvalue < yFvalue; 
                                 end);
                             end
 							
@@ -420,12 +419,12 @@ end
 	* startPos:起始点
 	* endPos:终点
 	* triPathList:三角形路径列表
-	* wayPoints:路径点
-	* offSet:移动物体宽度</param>
-	* returns:
+	* offSet:移动物体宽度
+	* returns: tablr 路径点 
 ]]
 function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
     local wayPoints = {};
+
     if (#triPathList == 0 or startPos == nil or endPos == nil) then
         return PathResCode.Failed;
     end    
@@ -433,7 +432,7 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
     -- 保证从起点到终点的顺序
     -- 倒置 triPathList
     local len = #triPathList;--长度
-    local stp = checkint(len / 2);--步长
+    local stp =  math.floor(len / 2);--步长
     local tmp = nil;
     for i=1,stp do
         --交换
@@ -461,7 +460,8 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
     end
 
     local way = MobaWayPoint.new(startPos, triPathList[1]);
-    while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) and #wayPoints <= #triPathList) do
+    -- while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) and #wayPoints <= #triPathList) do
+    while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) ) do
         way = self:GetFurthestWayPoint(way, triPathList, endPos, offSet);
         if (way == nil) then
             return PathResCode.CanNotGetNextWayPoint;

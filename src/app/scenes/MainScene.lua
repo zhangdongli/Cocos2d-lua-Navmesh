@@ -66,17 +66,17 @@ function MainScene:ctor()
 	self:scheduleUpdate();
 
 	-- 从文件读取
-	-- local readPath = cc.FileUtils:getInstance():getWritablePath();
-	-- local res,triLs = MobaNavMeshGen.sInstance():ReadFormFile(readPath.."caodi.json");
-	-- if res == NavResCode.Success then
-	-- 	self.wanGes = triLs;
+	local readPath = cc.FileUtils:getInstance():getWritablePath();
+	local res,triLs = MobaNavMeshGen.sInstance():ReadFormFile(readPath.."caodi.json");
+	if res == NavResCode.Success then
+		self.wanGes = triLs;
 
-	-- 	self.isSheZhiZhangAi = false;            --是否是设置障碍状态
-	-- 	self.isSheZhiLuJing = true; 			 --是否是设置路径状态 
+		self.isSheZhiZhangAi = false;            --是否是设置障碍状态
+		self.isSheZhiLuJing = true; 			 --是否是设置路径状态 
 
-	-- 	self.shengChengWangGeBtn:setButtonEnabled(false);
-	-- 	self.shengChengLuJingBtn:setButtonEnabled(true);
-	-- end
+		self.shengChengWangGeBtn:setButtonEnabled(false);
+		self.shengChengLuJingBtn:setButtonEnabled(true);
+	end
 end
 
 function MainScene:onEnter()

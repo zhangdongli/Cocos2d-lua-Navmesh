@@ -107,7 +107,7 @@ function MobaTriangle:CalcCollider()
     if MobaNMath.PointIsEqual(self.m_vecPoints[1],self.m_vecPoints[2]) 
         or MobaNMath.PointIsEqual(self.m_vecPoints[2],self.m_vecPoints[3]) 
         or MobaNMath.PointIsEqual(self.m_vecPoints[1],self.m_vecPoints[3]) then
-        printError("MobaTriangle:这不是一个三角形");
+        print("MobaTriangle:这不是一个三角形");
         return;
     end
 
@@ -139,7 +139,7 @@ function MobaTriangle:CalcCollider()
         end
     end
 
-    self.m_cBoxCollider = collider;
+    self.m_cBoxCollider = collider;    
 end
 
 --[[

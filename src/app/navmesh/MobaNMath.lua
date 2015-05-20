@@ -173,12 +173,12 @@ end
 ]]
 function MobaNMath.LineRect(linePath)
 
-    local lineRect = MobaLine2D.new();
+    local lineRect = MobaRect.new();
 
     if (linePath:GetStartPoint().x < linePath:GetEndPoint().x) then
-        lineRect.xMin = linePath.GetStartPoint().x;
+        lineRect.xMin = linePath:GetStartPoint().x;
     else
-        lineRect.xMin = linePath.GetEndPoint().x;
+        lineRect.xMin = linePath:GetEndPoint().x;
     end    
 
     if (linePath:GetStartPoint().y < linePath:GetEndPoint().y) then
