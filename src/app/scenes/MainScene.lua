@@ -66,6 +66,7 @@ function MainScene:ctor()
 	self:scheduleUpdate();
 
 	-- 从文件读取
+    --[[
 	local readPath = cc.FileUtils:getInstance():getWritablePath();
 	local res,triLs = MobaNavMeshGen.sInstance():ReadFormFile(readPath.."caodi.json");
 	if res == NavResCode.Success then
@@ -77,6 +78,7 @@ function MainScene:ctor()
 		self.shengChengWangGeBtn:setButtonEnabled(false);
 		self.shengChengLuJingBtn:setButtonEnabled(true);
 	end
+    ]]
 end
 
 function MainScene:onEnter()
