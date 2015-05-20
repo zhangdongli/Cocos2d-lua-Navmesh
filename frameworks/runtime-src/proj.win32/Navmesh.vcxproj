@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4E6A7A0E-DDD8-4BAA-8B22-C964069364ED}</ProjectGuid>
-    <ProjectName>MyLuaGame</ProjectName>
+    <ProjectName>Navmesh</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -102,11 +102,11 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>MyLuaGame.h</HeaderFileName>
-      <InterfaceIdentifierFileName>MyLuaGame_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>MyLuaGame_p.c</ProxyFileName>
+      <HeaderFileName>Navmesh.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Navmesh_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>Navmesh_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)/MyLuaGame.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)/Navmesh.tlb</TypeLibraryName>
       <DllDataFileName>
       </DllDataFileName>
     </Midl>
@@ -159,11 +159,11 @@ xcopy "$(ProjectDir)..\..\..\src" "$(ProjectDir)..\..\..\runtime\win32\src" /D /
       <MkTypLibCompatible>false</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <HeaderFileName>MyLuaGame.h</HeaderFileName>
-      <InterfaceIdentifierFileName>MyLuaGame_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>MyLuaGame_p.c</ProxyFileName>
+      <HeaderFileName>Navmesh.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Navmesh_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>Navmesh_p.c</ProxyFileName>
       <GenerateStublessProxies>true</GenerateStublessProxies>
-      <TypeLibraryName>$(IntDir)/MyLuaGame.tlb</TypeLibraryName>
+      <TypeLibraryName>$(IntDir)/Navmesh.tlb</TypeLibraryName>
       <DllDataFileName>
       </DllDataFileName>
     </Midl>

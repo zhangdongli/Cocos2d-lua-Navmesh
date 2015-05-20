@@ -38,7 +38,7 @@
 		<string>Icon-144.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.zdl.navigation_mesh</string>
+	<string>com.zdl.Cocos2d-lua-Navmesh</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

@@ -207,7 +207,7 @@
 		5023811517EBBCAC00990C9B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		5023811617EBBCAC00990C9B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		5023811717EBBCAC00990C9B /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
-		5023816B17EBBCE400990C9B /* MyLuaGame Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyLuaGame Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5023816B17EBBCE400990C9B /* Navmesh Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navmesh Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5023817217EBBE3400990C9B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		5023817317EBBE3400990C9B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5023817517EBBE3400990C9B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 		C07828F718B4D72E00BD2287 /* SimulatorApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SimulatorApp.mm; sourceTree = "<group>"; };
 		D6B061341803AC000077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		DA9E7D871AB1ABCC004B27C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		F293B3C815EB7BE500256477 /* MyLuaGame iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyLuaGame iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F293B3C815EB7BE500256477 /* Navmesh iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navmesh iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F293B3CC15EB7BE500256477 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F293B3CE15EB7BE500256477 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		F293B3D015EB7BE500256477 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -431,8 +431,8 @@
 		F293B3C915EB7BE500256477 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F293B3C815EB7BE500256477 /* MyLuaGame iOS.app */,
-				5023816B17EBBCE400990C9B /* MyLuaGame Mac.app */,
+				F293B3C815EB7BE500256477 /* Navmesh iOS.app */,
+				5023816B17EBBCE400990C9B /* Navmesh Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -490,9 +490,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5023812617EBBCE400990C9B /* MyLuaGame Mac */ = {
+		5023812617EBBCE400990C9B /* Navmesh Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "MyLuaGame Mac" */;
+			buildConfigurationList = 5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "Navmesh Mac" */;
 			buildPhases = (
 				5023813117EBBCE400990C9B /* Sources */,
 				5023813617EBBCE400990C9B /* Frameworks */,
@@ -506,14 +506,14 @@
 				152A34B9199CE758004B68DC /* PBXTargetDependency */,
 				C0A2F04118975FF80072A7AB /* PBXTargetDependency */,
 			);
-			name = "MyLuaGame Mac";
-			productName = MyLuaGame;
-			productReference = 5023816B17EBBCE400990C9B /* MyLuaGame Mac.app */;
+			name = "Navmesh Mac";
+			productName = Navmesh;
+			productReference = 5023816B17EBBCE400990C9B /* Navmesh Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F293B3C715EB7BE500256477 /* MyLuaGame iOS */ = {
+		F293B3C715EB7BE500256477 /* Navmesh iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "MyLuaGame iOS" */;
+			buildConfigurationList = F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "Navmesh iOS" */;
 			buildPhases = (
 				F293B3C415EB7BE500256477 /* Sources */,
 				F293B3C515EB7BE500256477 /* Frameworks */,
@@ -527,9 +527,9 @@
 				152A349F199CE72E004B68DC /* PBXTargetDependency */,
 				15D1F3091994BBCA00302043 /* PBXTargetDependency */,
 			);
-			name = "MyLuaGame iOS";
-			productName = MyLuaGame;
-			productReference = F293B3C815EB7BE500256477 /* MyLuaGame iOS.app */;
+			name = "Navmesh iOS";
+			productName = Navmesh;
+			productReference = F293B3C815EB7BE500256477 /* Navmesh iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -545,7 +545,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F293B3C215EB7BE500256477 /* Build configuration list for PBXProject "MyLuaGame" */;
+			buildConfigurationList = F293B3C215EB7BE500256477 /* Build configuration list for PBXProject "Navmesh" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -577,8 +577,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				F293B3C715EB7BE500256477 /* MyLuaGame iOS */,
-				5023812617EBBCE400990C9B /* MyLuaGame Mac */,
+				F293B3C715EB7BE500256477 /* Navmesh iOS */,
+				5023812617EBBCE400990C9B /* Navmesh Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -965,7 +965,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "MyLuaGame Mac" */ = {
+		5023816817EBBCE400990C9B /* Build configuration list for PBXNativeTarget "Navmesh Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5023816917EBBCE400990C9B /* Debug */,
@@ -974,7 +974,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F293B3C215EB7BE500256477 /* Build configuration list for PBXProject "MyLuaGame" */ = {
+		F293B3C215EB7BE500256477 /* Build configuration list for PBXProject "Navmesh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F293B6C215EB7BEA00256477 /* Debug */,
@@ -983,7 +983,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "MyLuaGame iOS" */ = {
+		F293B6C415EB7BEA00256477 /* Build configuration list for PBXNativeTarget "Navmesh iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F293B6C515EB7BEA00256477 /* Debug */,
