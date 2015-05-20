@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9A9690F9-E89C-44B4-BDD2-4253CE935F88</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Navmesh</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E693D590313F4777C0D8883F3D0D6982E7189DDA</key>
+		<string>https://github.com/zhangdongli/Cocos2dx-lua-Navmesh.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>frameworks/runtime-src/proj.ios_mac/Navmesh.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E693D590313F4777C0D8883F3D0D6982E7189DDA</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhangdongli/Cocos2dx-lua-Navmesh.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E693D590313F4777C0D8883F3D0D6982E7189DDA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E693D590313F4777C0D8883F3D0D6982E7189DDA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cocos2d-lua-Navmesh</string>
+		</dict>
+	</array>
+</dict>
+</plist>
