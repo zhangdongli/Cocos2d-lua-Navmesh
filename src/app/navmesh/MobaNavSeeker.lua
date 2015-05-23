@@ -239,8 +239,8 @@ function MobaNavSeeker:SeekTrianglePath(startPos, endPos, offset)
     
         -- 1. 把当前节点从开放列表删除, 加入到封闭列表
         local currNode;
-        currNode = openList[#openList];
-        table.remove(openList,#openList);
+        currNode = openList[1];
+        table.remove(openList,1);
         closeList[#closeList + 1] = currNode;
 
         --已经找到目的地
@@ -289,8 +289,8 @@ function MobaNavSeeker:SeekTrianglePath(startPos, endPos, offset)
                             if #openList >= 2 then
                                 --按照HValue正序
     							table.sort(openList, function (x,y)
-                                    local xFvalue = x:GetHValue() --/*+ x.GValue*/;
-                                    local yFvalue = y:GetHValue() --/*+ y.GValue*/;
+                                    local xFvalue = x:GetHValue() --[[+ x:GetGValue()]];
+                                    local yFvalue = y:GetHValue() --[[+ y:GetGValue()]];
                                     return xFvalue < yFvalue; 
                                 end);
                             end
@@ -321,7 +321,6 @@ function MobaNavSeeker:SeekTrianglePath(startPos, endPos, offset)
     end
 
     if (#closeList ~= 0) then
-    
         local path = closeList[#closeList];
         pathList[#pathList + 1] = path;
         while (path:GetParentID() ~= -1) do
@@ -444,7 +443,7 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
     -- 保存出边编号
     for i,tri in ipairs(triPathList) do
 
-        if (i ~= #triPathList) then
+        if (i < #triPathList) then
         
             local nextTri = triPathList[i + 1];
             tri:SetOutWallIndex(tri:GetWallIndex(nextTri:GetID()));
@@ -460,8 +459,11 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
     end
 
     local way = MobaWayPoint.new(startPos, triPathList[1]);
-    -- while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) and #wayPoints <= #triPathList) do
-    while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) ) do
+    while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) and #wayPoints <= #triPathList) do
+    -- while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) ) do
+        -- print("--------------------->>>>",#wayPoints);
+        -- print("--------------------->>>>way point",way:GetPoint().x,way:GetPoint().y);
+        -- print("--------------------->>>>endPos",endPos.x,endPos.y);
         way = self:GetFurthestWayPoint(way, triPathList, endPos, offSet);
         if (way == nil) then
             return PathResCode.CanNotGetNextWayPoint;
