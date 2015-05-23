@@ -459,8 +459,9 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
     end
 
     local way = MobaWayPoint.new(startPos, triPathList[1]);
-    while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) and #wayPoints <= #triPathList) do
-    -- while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) ) do
+    local endFind = false;
+    -- while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) and #wayPoints <= #triPathList) do
+    while ( (not MobaNMath.PointIsEqual(way:GetPoint(),endPos)) ) do
         -- print("--------------------->>>>",#wayPoints);
         -- print("--------------------->>>>way point",way:GetPoint().x,way:GetPoint().y);
         -- print("--------------------->>>>endPos",endPos.x,endPos.y);
@@ -468,6 +469,15 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
         if (way == nil) then
             return PathResCode.CanNotGetNextWayPoint;
         end
+
+        -- 检测是否出现重复路径点，如果有就终止
+        for i,wayPoint in pairs(wayPoints) do
+            if MobaNMath.PointIsEqual(wayPoint,way:GetPoint()) then
+                endFind = true;
+                break;
+            end
+        end
+        if endFind then break end;
         wayPoints[#wayPoints + 1] = way:GetPoint();
     end
 
