@@ -200,7 +200,7 @@ function MobaNavSeeker:SeekTrianglePath(startPos, endPos, offset)
     local pathList = {};
     local startTri = nil;
     local endTri = nil;
-    
+
     --获得起始与终点三角形
     for i,navTri in ipairs(self.m_lstTriangle) do
 
@@ -443,12 +443,6 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
         triPathList[len - i + 1] = tmp;
     end
     
-    --可以删除
-    print("--------------------------")
-    for i,v in ipairs(triPathList) do
-        print(i,v:GetID());
-    end
-
     -- 保存出边编号
     for i,tri in ipairs(triPathList) do
 
