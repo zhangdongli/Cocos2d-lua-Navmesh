@@ -198,25 +198,28 @@ end
 function MobaNavSeeker:SeekTrianglePath(startPos, endPos, offset)
 
     local pathList = {};
-    local startTri,endTri = nil,nil;
-
+    local startTri = nil;
+    local endTri = nil;
+    
     --获得起始与终点三角形
     for i,navTri in ipairs(self.m_lstTriangle) do
+
+        if (endTri == nil) then
+            if (navTri:IsPointIn(endPos)) then
+                endTri = navTri;
+            end    
+        end  
+
         if (startTri == nil) then
             if (navTri:IsPointIn(startPos)) then
                 startTri = navTri;
             end    
         end
                 
-        if (endTri == nil) then
-            if (navTri:IsPointIn(endPos)) then
-                endTri = navTri;
-            end    
-        end        
+             
 
         if (startTri ~= nil and endTri ~= nil) then break end;
     end
-
 
     --检查和修复位置
     local posErr,startTri,startPos,endTri,endPos = self:CheckAndFixPos(startTri,startPos,endTri,endPos);
@@ -439,6 +442,12 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
         triPathList[i] = triPathList[len - i + 1];
         triPathList[len - i + 1] = tmp;
     end
+    
+    --可以删除
+    print("--------------------------")
+    for i,v in ipairs(triPathList) do
+        print(i,v:GetID());
+    end
 
     -- 保存出边编号
     for i,tri in ipairs(triPathList) do
@@ -474,6 +483,8 @@ function MobaNavSeeker:CreateWayPoints(startPos, endPos,triPathList,offSet)
         for i,wayPoint in pairs(wayPoints) do
             if MobaNMath.PointIsEqual(wayPoint,way:GetPoint()) then
                 endFind = true;
+                print("--------->>>生成路径点时发现重复点",wayPoint.x,wayPoint.y);
+                print("--------->>>找到的路径三角形个数",#triPathList);
                 break;
             end
         end

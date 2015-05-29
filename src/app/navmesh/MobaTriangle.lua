@@ -186,7 +186,7 @@ end
     * returns bool 是否在三角形中
 ]]
 function MobaTriangle:IsPointIn(pt)
-
+    --[[
     if (self.m_cBoxCollider.xMin ~= self.m_cBoxCollider.xMax and (not self.m_cBoxCollider:Contains(pt))) then
         return false;
     end    
@@ -196,12 +196,40 @@ function MobaTriangle:IsPointIn(pt)
     local resultC = self:GetSide(3):ClassifyPoint(pt);
 
     if (resultA == PointSide.ON_LINE or resultB == PointSide.ON_LINE or resultC == PointSide.ON_LINE) then
+        print("1 包含点:",pt.x,pt.y);
         return true;
     elseif (resultA == PointSide.RIGHT_SIDE and resultB == PointSide.RIGHT_SIDE and resultC == PointSide.RIGHT_SIDE) then
+        print("2 包含点:",pt.x,pt.y);
         return true;
     end
 
     return false;
+    ]]
+
+    local v0 =  cc.pSub(self.m_vecPoints[3],self.m_vecPoints[1]);
+    local v1 = cc.pSub(self.m_vecPoints[2],self.m_vecPoints[1]);
+    local v2 = cc.pSub(pt,self.m_vecPoints[1]);
+
+    local dot00 = cc.pDot(v0,v0);
+    local dot01 = cc.pDot(v0,v1);
+    local dot02 = cc.pDot(v0,v2);
+    local dot11 = cc.pDot(v1,v1);
+    local dot12 = cc.pDot(v1,v2);
+
+    local inverDeno = 1 / (dot00 * dot11 - dot01 * dot01) ;
+
+    local u = (dot11 * dot02 - dot01 * dot12) * inverDeno ;
+    if (u < 0 or u > 1) then -- if u out of range, return directly
+        return false;
+    end
+
+
+    local v = (dot00 * dot12 - dot01 * dot02) * inverDeno ;
+    if (v < 0 or v > 1) then -- if v out of range, return directly
+        return false;
+    end
+
+    return u + v <= 1;
 end
 
 --[[

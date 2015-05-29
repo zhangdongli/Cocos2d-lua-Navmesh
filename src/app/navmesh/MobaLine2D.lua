@@ -17,7 +17,7 @@ PointSide = {
 	* 两线段交叉状态
 ]]
 LineCrossState = {
-    COLINE = 0,     --外线口
+    COLINE = 0,         --外线口
     PARALLEL = 1,   	--平行线
     CROSS = 2,      	--相交
     NOT_CROSS = 3   	--无相交

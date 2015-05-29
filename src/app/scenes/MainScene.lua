@@ -18,6 +18,7 @@ function MainScene:ctor()
 
 	self.wanGes = {}; 						--生成的网格
 	self.luJingPoints = {}; 				--生成的路径点
+	self.wangGeIdLabels ={}; 				--生成网格ID Lable集合
 
 	-- 标志
 	self.isSheZhiZhangAi = true;            --是否是设置障碍状态 默认true
@@ -134,6 +135,13 @@ function MainScene:initData()
 	if self.shengChengLuJingBtn then
 		self.shengChengLuJingBtn:setButtonEnabled(false);
 	end
+
+	if #self.wangGeIdLabels > 0 then
+		for i,wgIdLabel in ipairs(self.wangGeIdLabels) do
+			wgIdLabel:removeFromParent(true);
+		end
+		self.wangGeIdLabels = {};
+	end
 end
 
 
@@ -205,6 +213,19 @@ function MainScene:shengChengWangGeClick(event)
 
 		-- 保存障碍
 		self.wanGes = wanGes;
+
+		-- 显示网格ID
+		for i,wg in ipairs(wanGes) do
+			local wgLabel = display.newTTFLabel({
+			    text = tostring(wg:GetID()),
+			    font = "Marker Felt",
+			    size = 18,
+			    align = cc.TEXT_ALIGNMENT_CENTER -- 文字内部居中对齐
+			});
+			wgLabel:setPosition(wg:GetCenter());
+			self:addChild(wgLabel,100);
+			self.wangGeIdLabels[#self.wangGeIdLabels + 1] = wgLabel;
+		end
 
 		--进入寻路状态
 		self.isSheZhiZhangAi = false;
